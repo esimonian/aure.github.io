@@ -12,7 +12,7 @@ email: aure@aure.com
 location: Mill Valley, CA # ex. Nice, France
 company: AudioKit
 company_url: http://audiokit.io/
-github_url: https://github.com/aure # ex. https://github.com/DONGChuan
+github_url: https://github.com/audiokit # ex. https://github.com/DONGChuan
 description: My home page
 favicon: favicon.png # Image must be in assets/images
 
