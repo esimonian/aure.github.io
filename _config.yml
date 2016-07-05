@@ -71,6 +71,9 @@ navs:
     label: Bookmark
 
   -
+    href: /music
+    label: Music
+  -
     href: /about
     label: About
 
