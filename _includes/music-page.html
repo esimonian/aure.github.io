@@ -1,11 +1,27 @@
-<ul>
-    {% for music in site.music%}
-     {% if music.title != "Music" %}
-    <li>
-        <a href="{{music.url}}">{{music.title}}</a>
-    </li>
-      {% endif %}
-    {% endfor %}
-</ul>
+
+<div id="container-open-source">
+
+    <section class="container">
+        <div class="repo-list row">
+            {% for music in site.music%}
+              {% if music.title != "Music" %}
+            <div class="col-md-4 card text-center">
+                <div class="thumbnail">
+                    <div class="card-image geopattern" data-pattern-id="{{music.title}}">
+                        <div class="card-image-cell">
+                            <h3 class="card-title">
+                                <a href="{{music.url}}" target="_blank">{{music.title}}</a>
+                            </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+
+</div>
 
            
