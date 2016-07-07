@@ -7,3 +7,6 @@
       {% endif %}
     {% endfor %}
 </ul>
+
+@template = Liquid::Template.parse(" {{ all_songs}} ")
+@template.render({}, :filters => [Jekyll::SongFilter])              

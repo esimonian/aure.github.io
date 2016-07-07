@@ -43,7 +43,7 @@ defaults: []
 
 kramdown:
   input: GFM
-  enable_coderay: true
+  syntax_highlighter: coderay
 
 # Collections
 collections:
