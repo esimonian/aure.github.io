@@ -4,8 +4,9 @@ title: Beach Boys
 css: ['music.css']
 javascript: ['underscore-min.js']
 ---
+{% assign songs = "BeachBoys" | all_songs%}
 
-{% include beach_boys.html %}
+{% include artist.html %}
 
 <!--
 {% assign songs = "BeachBoys" | all_songs%}
