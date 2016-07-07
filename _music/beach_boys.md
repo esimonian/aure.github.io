@@ -7,7 +7,7 @@ javascript: ['underscore-min.js']
 
 {% assign songs = "BeachBoys" | all_songs%}
 
-{% for song in songs offset:2%}
+{% for song in songs offset:3%}
   <p>{{song}}</p>
 {% endfor %}
 
