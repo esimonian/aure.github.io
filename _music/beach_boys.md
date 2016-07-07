@@ -5,13 +5,16 @@ css: ['music.css']
 javascript: ['underscore-min.js']
 ---
 
+{% include beach_boys.html %}
+
+<!--
 {% assign songs = "BeachBoys" | all_songs%}
 
 {% for song in songs offset:3%}
   <p>{{song}}</p>
 {% endfor %}
 
-
+-->
 <!--
   {% capture directory %}
       {% assign path = post.path | remove_first:'_posts/' | split:'/' %}
