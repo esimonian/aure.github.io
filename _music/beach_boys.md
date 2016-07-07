@@ -5,8 +5,11 @@ css: ['music.css']
 javascript: ['underscore-min.js']
 ---
 
-{{"BeachBoys" | all_songs}}
+{% assign songs = "BeachBoys" | all_songs%}
 
+{% for song in songs offset:2%}
+  <p>{{song}}</p>
+{% endfor %}
 
 
 <!--
