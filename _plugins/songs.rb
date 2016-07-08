@@ -2,12 +2,15 @@ module Jekyll
   module SongFilter
 
     def all_songs(directory)
-      @songs = Dir.entries("assets/music/#{directory}")
+     Dir.entries("assets/music/#{directory}").delete_if{|entry| entry == "." || entry == ".." || entry == ".nodelete"}
     end
 
     def files_from_song(directory, song)
-      @files = Dir.entries("assets/music/#{directory}/#{song}")
-      @files = @files.compact.reject{|f| /.txt$/.match(f)}
+      Dir.entries("assets/music/#{directory}/#{song}").delete_if{|entry| entry == "." || entry == ".."}
+    end
+
+    def pdf_file(file)
+      file.end_with? ".pdf"
     end
 
     #def song_from_folder(directory, i)
@@ -30,8 +33,7 @@ module Jekyll
     #  Dir.entries("public/#{folder}/#{song}/*.#{extension}")
     #end
   
-end
-
+  end
 end
 
 Liquid::Template.register_filter(Jekyll::SongFilter)

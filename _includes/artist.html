@@ -3,7 +3,8 @@
 
     <section class="container">
         <div class="repo-list row">
-            {% for song in songs offset:3%}
+            {% for song in songs %}
+                {%if {{song | slice: 0 != "."}}%}
             <div class="col-md-4 card text-center">
                 <div class="thumbnail">
                     <div class="card-image geopattern" data-pattern-id="{{ song }}">
@@ -16,6 +17,7 @@
 
                 </div>
             </div>
+                {% endif %}
             {% endfor %}
         </div>
     </section>
