@@ -6,10 +6,8 @@ javascript: ['underscore-min.js']
 ---
 
 {% assign files = "BeachBoys" | files_from_song: "All Summer Long" %}
+{%assign artist = "BeachBoys"%}
 
-{% for file in files offset:2%}
-  <p>{{file}}</p>
-{% endfor %}
 
-{% include artist.html %}
+{% include song.html %}
 
