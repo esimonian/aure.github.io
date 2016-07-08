@@ -1,9 +1,10 @@
 
-{% for file in files %}
-  {% if {{file | pdf_file }}%}
-  
-  <a href="/assets/music/{{artist}}/{{page.title}}/{{file}}">{{file}}</a>
-  {% endif %}
+{% assign pdfs = files | find_pdfs %}
+
+{% for pdfs in pdfs %}
+
+  <a href="/assets/music/{{artist}}/{{page.title}}/{{pdfs}}">{{pdfs}}</a>
+
 
 {% endfor %}
 

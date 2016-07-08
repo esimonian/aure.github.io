@@ -9,8 +9,18 @@ module Jekyll
       Dir.entries("assets/music/#{directory}/#{song}").delete_if{|entry| entry == "." || entry == ".."}
     end
 
-    def pdf_file(file)
-      file.end_with? ".pdf"
+    def file_ext(file)
+      file[-3..-1]
+    end
+
+    def find_pdfs(files)
+      pdfs = []
+      files.each do |file|
+        if file_ext(file) == "pdf"
+          pdfs << file
+        end
+      end
+      pdfs
     end
 
     #def song_from_folder(directory, i)
