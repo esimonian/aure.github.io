@@ -49,6 +49,9 @@ kramdown:
 collections:
   music:
     output: true
+  songs:
+    output: true  
+
 
 # Disque
 disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com

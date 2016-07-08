@@ -6,8 +6,9 @@ javascript: ['underscore-min.js']
 ---
 {% assign songs = "BeachBoys" | all_songs%}
 
-{% include artist.html %}
+{% assign files = "BeachBoys" | files_from_song: "All Summer Long" %}
 
+{% include artist.html %}
 <!--
 {% assign songs = "BeachBoys" | all_songs%}
 
