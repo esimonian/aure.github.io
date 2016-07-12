@@ -11,3 +11,6 @@ javascript: ['underscore-min.js']
 
 {% include song.html %}
 
+<!--
+files = "all summer long array"
+-->

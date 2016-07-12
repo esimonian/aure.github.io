@@ -23,21 +23,66 @@ module Jekyll
       pdfs
     end
 
-    #def song_from_folder(directory, i)
-    #  all_songs(directory)
-    #  @song = @songs[i]
-    #  @title = "OK, Everybody, Sing: #{@song}"
-    #  @files = Dir.entries("assets/music/#{directory}/#{@song}/*")
-    #  @files = @files.compact.reject{|f| /.txt$/.match(f)}
-    #  
-    #  @pdf_files = files_in_dir(directory, @song, "pdf")
-    #  @mid_files = files_in_dir(directory, @song, "mid")
-    #  @doc_files = files_in_dir(directory, @song, "doc")
-    #  @sib_files = files_in_dir(directory, @song, "sib")
-    #  @enc_files = files_in_dir(directory, @song, "enc")
-    #  @mus_files = files_in_dir(directory, @song, "mus")
-    #  @wrk_files = files_in_dir(directory, @song, "wrk")
-    #end
+    def find_mids(files)
+      mids = []
+      files.each do |file|
+        if file_ext(file) == "mid"
+          mids << file
+        end
+      end
+      mids
+    end
+
+    def find_docs(files)
+      docs = []
+      files.each do |file|
+        if file_ext(file) == "doc"
+          docs << file
+        end
+      end
+      docs
+    end
+
+    def find_sibs(files)
+      sibs = []
+      files.each do |file|
+        if file_ext(file) == "sib"
+          sibs << file
+        end
+      end
+      sibs
+    end
+
+    def find_encs(files)
+      encs = []
+      files.each do |file|
+        if file_ext(file) == "enc"
+          encs << file
+        end
+      end
+      encs
+    end
+
+    def find_mus(files)
+      mus = []
+      files.each do |file|
+        if file_ext(file) == "mus"
+          mus << file
+        end
+      end
+      mus
+    end
+
+    def find_wrks(files)
+      wrks = []
+      files.each do |file|
+        if file_ext(file) == "wrk"
+          wrks << file
+        end
+      end
+      wrks
+    end
+
 #
     #def files_in_dir(folder, song, extension)
     #  Dir.entries("public/#{folder}/#{song}/*.#{extension}")

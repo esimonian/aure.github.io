@@ -1,11 +1,22 @@
 
+
+{% for file in files %}
+<ul>
+    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{file}}">{{file}}</li>
+</ul>
+{% endfor %}
+<!--
+
+<h3>PDFS:</h3>
+
+
 {% assign pdfs = files | find_pdfs %}
 
-{% for pdfs in pdfs %}
+<ul>
+  {% for pdfs in pdfs %}
+    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{pdfs}}">{{pdfs}}</li>
+  {% endfor %}
+</ul>
 
-  <a href="/assets/music/{{artist}}/{{page.title}}/{{pdfs}}">{{pdfs}}</a>
-
-
-{% endfor %}
-
+-->
 
