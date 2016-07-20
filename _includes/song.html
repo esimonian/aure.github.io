@@ -1,22 +1,40 @@
 
+{{files | lyrics}}
+
+{% assign pdfs = files | find_pdfs %}
+<div> 
+<ul>
+  {% for pdfs in pdfs %}
+    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{pdfs}}">{{pdfs}}</li>
+  {% endfor %}
+</ul>
+</div>
+
+
+<hr>
+
+<div>
+{% assign mids = files | find_mids %}
+
+
+<ul>
+  {% for mids in mids %}
+    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{mids}}">{{mids}}</li>
+  {% endfor %}
+</ul>
+</div>
+<!--
+
 
 {% for file in files %}
 <ul>
     <li><a href="/assets/music/{{artist}}/{{page.title}}/{{file}}">{{file}}</li>
 </ul>
 {% endfor %}
-<!--
-
 <h3>PDFS:</h3>
 
 
-{% assign pdfs = files | find_pdfs %}
 
-<ul>
-  {% for pdfs in pdfs %}
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{pdfs}}">{{pdfs}}</li>
-  {% endfor %}
-</ul>
 
 -->
 

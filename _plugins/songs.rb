@@ -83,6 +83,23 @@ module Jekyll
       wrks
     end
 
+    def find_txt(files)
+      files.each do |file|
+       return file if file_ext(file) == "txt"
+      end
+    end
+
+     def lyrics(files)
+      contents = ""
+      begin
+        file =File.new(find_txt(files))
+        while (line = file.gets)
+          contents << line
+        end
+      rescue
+      end
+      return contents
+    end
 #
     #def files_in_dir(folder, song, extension)
     #  Dir.entries("public/#{folder}/#{song}/*.#{extension}")
