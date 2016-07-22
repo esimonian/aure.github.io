@@ -15,7 +15,7 @@ company_url: http://audiokit.io/
 github_url: https://github.com/audiokit # ex. https://github.com/DONGChuan
 description: My home page
 favicon: favicon.png # Image must be in assets/images
-
+repository: audiokit/AudioKit
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
 # For production, use your github page url. ex. http://dongchuan.github.io
