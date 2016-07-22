@@ -89,17 +89,23 @@ module Jekyll
       end
     end
 
-     def lyrics(files)
-      contents = ""
-      begin
-        file =File.new(find_txt(files))
-        while (line = file.gets)
-          contents << line
-        end
-      rescue
+    def lyrics(file, folder, song)
+      File.open("/assets/music/#{folder}/#{song}/#{file}").each do |line|
+        print  "#{line}"
       end
-      return contents
     end
+
+    #def lyrics(file)
+    #  contents = ""
+    #  begin
+    #    file =File.new(file, "r")
+    #    while (line = file.gets)
+    #      contents << line
+    #    end
+    #  rescue
+    #  end
+    #  return contents
+    #end
 #
     #def files_in_dir(folder, song, extension)
     #  Dir.entries("public/#{folder}/#{song}/*.#{extension}")
