@@ -1,82 +1,75 @@
 <div>{% include help.html %}</div>
 
+{% for file in site.static_files %}
+  {% if file.path contains {{page.title}} and file.extname contains "txt"%}
+    {{file.path || lyrics}}
+  {% endif %}
+{% endfor %}
+
+
 <hr>
 
-{% assign text = files | find_txt %}
-
-{% capture song %}
-  "/assets/music/{{artist}}/{{page.title}}/{{text}}"
-{% endcapture %}
-
-{{song}}
-
-{% assign pdfs = files | find_pdfs %}
 <h3>Pdfs:</h3>
 <ul>
-  {% for pdfs in pdfs %}
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{pdfs}}">{{pdfs}}</a></li>
+  {% for file in site.static_files %}
+    {% if file.path contains {{page.title}} and file.extname contains "pdf"%}
+      <li><a href="{{file.path}}">{{file.path}}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
-
 
 <hr>
 
 <h3>MIDIs:</h3>
-{% assign mids = files | find_mids %}
-
-
 <ul>
-  {% for mids in mids %}
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{mids}}">{{mids}}</a></li>
+  {% for file in site.static_files %}
+    {% if file.path contains {{page.title}} and file.extname contains "mid"%}
+      <li><a href="{{file.path}}">{{file.path}}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 
 <hr>
 
 <h3>Docs:</h3>
-{% assign docs = files | find_docs %}
-
-
 <ul>
-  {% for docs in docs %}
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{docs}}">{{docs}}</a></li>
+  {% for file in site.static_files %}
+    {% if file.path contains {{page.title}} and file.extname contains "doc"%}
+      <li><a href="{{file.path}}">{{file.path}}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
-
 
 <hr>
 
 <h3>Sibelius:</h3>
-{% assign sibs = files | find_sibs %}
-
-
 <ul>
-  {% for sib in sibs %}
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{sib}}">{{sib}}</a></li>
+  {% for file in site.static_files %}
+    {% if file.path contains {{page.title}} and file.extname contains "sib"%}
+      <li><a href="{{file.path}}">{{file.path}}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 
 <hr>
 
 <h3>Encore:</h3>
-{% assign encs = files | find_encs %}
-
-
 <ul>
-  {% for enc in encs %}
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{enc}}">{{enc}}</a></li>
+  {% for file in site.static_files %}
+    {% if file.path contains {{page.title}} and file.extname contains "enc"%}
+      <li><a href="{{file.path}}">{{file.path}}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 
 <hr>
 
 <h3>Finale:</h3>
-{% assign muss = files | find_mus %}
-
-
 <ul>
-  {% for mus in muss %}
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{mus}}">{{mus}}</a></li>
+  {% for file in site.static_files %}
+    {% if file.path contains {{page.title}} and file.extname contains "mus"%}
+      <li><a href="{{file.path}}">{{file.path}}</a></li>
+    {% endif %}
   {% endfor %}
 </ul>
 

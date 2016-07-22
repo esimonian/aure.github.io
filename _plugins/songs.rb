@@ -9,92 +9,14 @@ module Jekyll
       Dir.entries("assets/music/#{directory}/#{song}").delete_if{|entry| entry == "." || entry == ".."}
     end
 
-    def file_ext(file)
-      file[-3..-1]
-    end
-
-    def find_pdfs(files)
-      pdfs = []
-      files.each do |file|
-        if file_ext(file) == "pdf"
-          pdfs << file
-        end
-      end
-      pdfs
-    end
-
-    def find_mids(files)
-      mids = []
-      files.each do |file|
-        if file_ext(file) == "mid"
-          mids << file
-        end
-      end
-      mids
-    end
-
-    def find_docs(files)
-      docs = []
-      files.each do |file|
-        if file_ext(file) == "doc"
-          docs << file
-        end
-      end
-      docs
-    end
-
-    def find_sibs(files)
-      sibs = []
-      files.each do |file|
-        if file_ext(file) == "sib"
-          sibs << file
-        end
-      end
-      sibs
-    end
-
-    def find_encs(files)
-      encs = []
-      files.each do |file|
-        if file_ext(file) == "enc"
-          encs << file
-        end
-      end
-      encs
-    end
-
-    def find_mus(files)
-      mus = []
-      files.each do |file|
-        if file_ext(file) == "mus"
-          mus << file
-        end
-      end
-      mus
-    end
-
-    def find_wrks(files)
-      wrks = []
-      files.each do |file|
-        if file_ext(file) == "wrk"
-          wrks << file
-        end
-      end
-      wrks
-    end
-
-    def find_txt(files)
-      files.each do |file|
-       return file if file_ext(file) == "txt"
-      end
-    end
-
     def lyrics(file)
-      lyrics = file.gsub!("/\s+/", "\ ")
-      lyrics
+      #file = file.lstrip.gsub(/ /, '\ ')
+      #file = file.gsub('(', '\(')
+      #file = file.gsub(')', '\)')
+      File.read("assets/music/BeachBoys/All\ Summer\ Long/All\ Summer\ Long\ (lyrics).txt")
     end
 
-
+    # File.read("assets/music/BeachBoys/All\ Summer\ Long/All\ Summer\ Long\ (lyrics).txt")
     #def lyrics(file, folder, song)
     #  File.open("/assets/music/#{folder}/#{song}/#{file}").each do |line|
     #    print  "#{line}"
