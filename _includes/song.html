@@ -1,11 +1,12 @@
-<div>{% include help.html %}</div>
-
 {% for file in site.static_files %}
   {% if file.path contains {{page.title}} and file.extname contains "txt"%}
-    {{file.path || lyrics}}
+    {% assign file_path = {{file.path}} %}
   {% endif %}
 {% endfor %}
 
+{% render_lyrics %}
+
+<div>{% include help.html %}</div>
 
 <hr>
 
@@ -74,20 +75,4 @@
 </ul>
 
 <hr>
-
-
-<!--
-
-
-{% for file in files %}
-<ul>
-    <li><a href="/assets/music/{{artist}}/{{page.title}}/{{file}}">{{file}}</li>
-</ul>
-{% endfor %}
-<h3>PDFS:</h3>
-
-
-
-
--->
 

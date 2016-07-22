@@ -9,7 +9,11 @@ javascript: ['underscore-min.js']
 {%assign artist = "BeachBoys"%}
 
 
+
 {% include song.html %}
+
+
+
 
 <!--
 files = "all summer long array"
