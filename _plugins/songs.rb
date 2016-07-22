@@ -89,11 +89,17 @@ module Jekyll
       end
     end
 
-    def lyrics(file, folder, song)
-      File.open("/assets/music/#{folder}/#{song}/#{file}").each do |line|
-        print  "#{line}"
-      end
+    def lyrics(file)
+      lyrics = file.gsub!("/\s+/", "\ ")
+      lyrics
     end
+
+
+    #def lyrics(file, folder, song)
+    #  File.open("/assets/music/#{folder}/#{song}/#{file}").each do |line|
+    #    print  "#{line}"
+    #  end
+    #end
 
     #def lyrics(file)
     #  contents = ""

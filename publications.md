@@ -5,7 +5,7 @@ menu: Publications
 ---
 ## Sci-Fi Lullaby
 
-One day I will tell the whole story on this web site, when I have time, but for now I'll just say that I was guitarist for the Los Angeles band, Sci-Fi Lullaby from 2001-2002 and it was a life-changing experience. Sci-Fi Lullaby songs are some of the best songs I've ever heard. Much later, in 2011 in fact, I wanted to study synth pop a la Duran Duran and Depeche Mode more carefully. I decided that I would do just as well to really learn everything about Sci-Fi's music and I did that by transcribing their biggest hits along with my friend, music mentor, and co-author, Alan Deane. The resulting song book, <a href="http://www.lulu.com/shop/aurelius-prochazka-and-alan-deane/sci-fi-lullabies-the-music-of-art-martinez-and-anthony-p-rodriguez/paperback/product-17351039.html" target="_blank" ">Sci-Fi Lullabies: The Music of Art Martinez and Anthony P. Rodriguez</a> is available at Lulu.com.
+One day I will tell the whole story on this web site, when I have time, but for now I'll just say that I was guitarist for the Los Angeles band, Sci-Fi Lullaby from 2001-2002 and it was a life-changing experience. Sci-Fi Lullaby songs are some of the best songs I've ever heard. Much later, in 2011 in fact, I wanted to study synth pop a la Duran Duran and Depeche Mode more carefully. I decided that I would do just as well to really learn everything about Sci-Fi's music and I did that by transcribing their biggest hits along with my friend, music mentor, and co-author, Alan Deane. The resulting song book, <a href="http://www.lulu.com/shop/aurelius-prochazka-and-alan-deane/sci-fi-lullabies-the-music-of-art-martinez-and-anthony-p-rodriguez/paperback/product-17351039.html" target="_blank">Sci-Fi Lullabies: The Music of Art Martinez and Anthony P. Rodriguez</a> is available at Lulu.com.
 
 ![Alt text](/assets/images/Ultrahorse.png)
 
@@ -23,6 +23,16 @@ That cover artwork is a perfect representation of Art and Anthony’s musical co
 
 In 1996 I began to grow tired of Zope, even though I loved Python, so I started experimenting with new web application platforms and discovered Ruby on Rails in its infancy.  I wrote a blog about my experiences with Rails and converted the core of ArsDigita's Community System to it.  Debra Williams-Cauley from Addison-Wesley contacted me to write a book about Rails, but I did not see how I could contribute something better than the excellent "Agile Web Development Using Ruby On Rails" by David Heinemeier Hansson, the inventor of Rails.  I changed my mind when I realized I could tell a story with the book, utilizing my experience building community web site and taking the reader on a journey of creating a social networking site with Ruby on Rails.  
 I enlisted the help of Michael Hartl, a friend from Caltech, and we published and released RailsSpace in 1997 to excellent reviews.  The predominant social network at the time was MySpace, so we named the book "RailsSpace: Building A Social Networking Web Site with Ruby on Rails".  It was a bad name considering that shortly thereafter Facebook crushed MySpace and became the default social networking site for most users.   After the book was released, I created a series of screen casts entitled "RailsSpace: Ruby On Rails Tutorial" which already was a better name!  When Michael wanted to create a second edition of the book, I bowed out of the project, but it is essentially the same book, written for the latest version of Rails, and with a much simpler name, "Ruby On Rails Tutorial". 
+
+<div style="display: inline-block; text-align: center;">
+  <a href="https://www.amazon.com/RailsSpace-Building-Networking-Addison-Wesley-Professional/dp/0321480791?ie=UTF8&qid=1329093414&ref_=sr_1_1&sr=8-1" target="_blank">
+    <img src="/assets/images/railsspace.png" alt="railsspace">
+  </a>
+  <a href="https://www.amazon.com/RailsSpace-Rails-Tutorial-LiveLessons-Training/dp/0321517067?ie=UTF8&qid=1329093414&ref_=sr_1_4&sr=8-4" target="_blank">
+    <img src="/assets/images/railsspace_livelesson.png" alt="railsspace live lesson">
+  </a>
+
+</div>
 
 ## Aeronautics
 

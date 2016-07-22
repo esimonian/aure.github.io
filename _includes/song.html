@@ -1,18 +1,17 @@
 <div>{% include help.html %}</div>
 
+<hr>
 
 {% assign text = files | find_txt %}
 
-{% capture folder %}
-  {{artist}}
+{% capture song %}
+  "/assets/music/{{artist}}/{{page.title}}/{{text}}"
 {% endcapture %}
 
-{% capture song %}
-  {{page.title | lstrip}}
-{% endcapture %}
+{{song}}
 
 {% assign pdfs = files | find_pdfs %}
-<h3>PdfS:</h3>
+<h3>Pdfs:</h3>
 <ul>
   {% for pdfs in pdfs %}
     <li><a href="/assets/music/{{artist}}/{{page.title}}/{{pdfs}}">{{pdfs}}</a></li>
@@ -22,7 +21,7 @@
 
 <hr>
 
-<h3>MIDI:</h3>
+<h3>MIDIs:</h3>
 {% assign mids = files | find_mids %}
 
 
@@ -59,7 +58,7 @@
 
 <hr>
 
-<h3>ENC:</h3>
+<h3>Encore:</h3>
 {% assign encs = files | find_encs %}
 
 
