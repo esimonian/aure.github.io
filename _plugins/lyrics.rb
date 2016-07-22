@@ -7,10 +7,6 @@ module Jekyll
 
     def render(context)
       file = context["file_path"]
-      #file = file.gsub(/ /, '\ ')
-      #file = file.gsub('(', '\(')
-      #file = file.gsub(')', '\)')
-      #file = File.read(context["file_path"])
       File.read(Dir.pwd+file)
     end
   end
