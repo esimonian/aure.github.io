@@ -6,15 +6,14 @@
 
 {% render_lyrics %}
 
-<div>{% include help.html %}</div>
-
 <hr>
 
 <h3>Pdfs:</h3>
 <ul>
   {% for file in site.static_files %}
     {% if file.path contains {{page.title}} and file.extname contains "pdf"%}
-      <li><a href="{{file.path}}">{{file.path}}</a></li>
+      {% assign title = {{file.path}} | split: "/" %}
+      <li><a href="{{file.path}}">{{title | last | remove: ".pdf"}}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -25,7 +24,8 @@
 <ul>
   {% for file in site.static_files %}
     {% if file.path contains {{page.title}} and file.extname contains "mid"%}
-      <li><a href="{{file.path}}">{{file.path}}</a></li>
+      {% assign title = {{file.path}} | split: "/" %}
+      <li><a href="{{file.path}}">{{title | last | remove: ".mid"}}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -36,7 +36,8 @@
 <ul>
   {% for file in site.static_files %}
     {% if file.path contains {{page.title}} and file.extname contains "doc"%}
-      <li><a href="{{file.path}}">{{file.path}}</a></li>
+      {% assign title = {{file.path}} | split: "/" %}
+      <li><a href="{{file.path}}">{{title | last | remove: ".doc"}}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -47,7 +48,8 @@
 <ul>
   {% for file in site.static_files %}
     {% if file.path contains {{page.title}} and file.extname contains "sib"%}
-      <li><a href="{{file.path}}">{{file.path}}</a></li>
+      {% assign title = {{file.path}} | split: "/" %}
+      <li><a href="{{file.path}}">{{title | last | remove: ".sib"}}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -58,7 +60,8 @@
 <ul>
   {% for file in site.static_files %}
     {% if file.path contains {{page.title}} and file.extname contains "enc"%}
-      <li><a href="{{file.path}}">{{file.path}}</a></li>
+      {% assign title = {{file.path}} | split: "/" %}
+      <li><a href="{{file.path}}">{{title | last | remove: ".enc"}}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -69,10 +72,13 @@
 <ul>
   {% for file in site.static_files %}
     {% if file.path contains {{page.title}} and file.extname contains "mus"%}
-      <li><a href="{{file.path}}">{{file.path}}</a></li>
+      {% assign title = {{file.path}} | split: "/" %}
+      <li><a href="{{file.path}}">{{title | last | remove: ".mus"}}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
 
 <hr>
+
+<div>{% include help.html %}</div>
 
