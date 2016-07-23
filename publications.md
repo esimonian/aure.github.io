@@ -1,8 +1,39 @@
 ---
-layout: post
+layout: default
 title: Publications
 menu: Publications
 ---
+<!-- Page Sub Menu
+============================================= -->
+<div id="page-menu">
+
+<div id="page-menu-wrap">
+  <div class="container clearfix">
+    <div class="menu-title">Publications</div>
+    <nav>
+      <ul>
+        <li class="current"><a href="#SFiL"><div>Sci-Fi Lullaby</div></a></li>
+        <li><a href="#rails"><div>Rails Tutorial</div></a>
+          <ul>
+            <li><a href="#"><div>Small Size</div></a></li>
+            <li><a href="#"><div>Normal Size</div></a></li>
+            <li><a href="#"><div>Large Size</div></a></li>
+          </ul>
+        </li>
+        <li><a href="#"><div>Reviews</div></a>
+          <ul>
+            <li><a href="#"><div>Expert Reviews</div></a></li>
+            <li><a href="#"><div>User Reviews</div></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  <div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
+  </div>
+</div>
+</div><!-- #page-menu end -->
+
+<div id="SFiL">
 ## Sci-Fi Lullaby
 
 One day I will tell the whole story on this web site, when I have time, but for now I'll just say that I was guitarist for the Los Angeles band, Sci-Fi Lullaby from 2001-2002 and it was a life-changing experience. Sci-Fi Lullaby songs are some of the best songs I've ever heard. Much later, in 2011 in fact, I wanted to study synth pop a la Duran Duran and Depeche Mode more carefully. I decided that I would do just as well to really learn everything about Sci-Fi's music and I did that by transcribing their biggest hits along with my friend, music mentor, and co-author, Alan Deane. The resulting song book, <a href="http://www.lulu.com/shop/aurelius-prochazka-and-alan-deane/sci-fi-lullabies-the-music-of-art-martinez-and-anthony-p-rodriguez/paperback/product-17351039.html" target="_blank">Sci-Fi Lullabies: The Music of Art Martinez and Anthony P. Rodriguez</a> is available at Lulu.com.
@@ -19,6 +50,9 @@ The cover art for the album The Pleasure and Pain of an Automobile (1997) depict
 
 That cover artwork is a perfect representation of Art and Anthony’s musical collaboration.  This partnership led the once-innocent, religiously raised and amiable Art Martinez, to be corrupted by the free thinking, sharp-tongued yet still amiable Anthony P. Rodriguez.  Together they created music never before so beautifully crafted.
 
+
+</div>
+<div id="rails">
 ## Rails Tutorial
 
 In 1996 I began to grow tired of Zope, even though I loved Python, so I started experimenting with new web application platforms and discovered Ruby on Rails in its infancy.  I wrote a blog about my experiences with Rails and converted the core of ArsDigita's Community System to it.  Debra Williams-Cauley from Addison-Wesley contacted me to write a book about Rails, but I did not see how I could contribute something better than the excellent "Agile Web Development Using Ruby On Rails" by David Heinemeier Hansson, the inventor of Rails.  I changed my mind when I realized I could tell a story with the book, utilizing my experience building community web site and taking the reader on a journey of creating a social networking site with Ruby on Rails.  
@@ -31,6 +65,8 @@ I enlisted the help of Michael Hartl, a friend from Caltech, and we published an
   <a href="https://www.amazon.com/RailsSpace-Rails-Tutorial-LiveLessons-Training/dp/0321517067?ie=UTF8&qid=1329093414&ref_=sr_1_4&sr=8-4" target="_blank">
     <img src="/assets/images/railsspace_livelesson.png" alt="railsspace live lesson">
   </a>
+
+</div>
 
 </div>
 

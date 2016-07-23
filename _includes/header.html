@@ -1,17 +1,37 @@
-<header class="site-header">
-    <div class="container">
-        <a id="site-header-brand" href="/" title="{{ site.name }}">
-            <span class="octicon octicon-mark-github"></span> {{ site.name }}
-        </a>
-        <nav class="site-header-nav" role="navigation">
-            {% for nav in site.navs %}
-            <a href="{{ nav.href }}"
+<header id="header" class="sticky-style-2">
+    <div class="container clearfix">
+        <!-- Logo
+        ============================================= -->
+        <div id="logo" class="divcenter text-center">
+            <h1>Aurelius Prochazka</h1>
+        </div><!-- #logo end -->
+    </div>
+    <div id="header-wrap">
+        <!-- Primary Navigation
+        ============================================= -->
+        <nav id="primary-menu" class="style-2 center">
+            <div class="container clearfix">
+                <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                <ul>
+                    
+                    {% for nav in site.navs %}
+                    <li><a href="{{ nav.href }}"
                class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item hvr-underline-from-center"
                target="{{ nav.target | default: _self }}"
-               title="{{ nav.label }}">
-                {{ nav.label }}
-            </a>
-            {% endfor %}
-        </nav>
+               title="{{ nav.label }}"><div>{{ nav.label }}</div></a></li>
+                    {% endfor %}
+                </ul>
+
+                <!-- Top Search
+                ============================================= -->
+                <div id="top-search">
+                    <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+                    <form action="search.html" method="get">
+                        <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+                    </form>
+                </div><!-- #top-search end -->
+            </div>
+        </nav><!-- #primary-menu end -->
     </div>
-</header>
+</header><!-- #header end -->

@@ -63,6 +63,9 @@ paginate_path: 'page:num'
 # Navigation. If you do not like these modules, just remove them :D
 navs:
   -
+    href: /
+    label: Home
+  -
     href: /open-source
     label: Open-Source
 
@@ -71,8 +74,8 @@ navs:
     label: Blog
 
   -
-    href: /bookmark
-    label: Bookmark
+    href: /presentations
+    label: Presentations
 
   -
     href: /music
