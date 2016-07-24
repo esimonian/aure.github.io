@@ -13,10 +13,9 @@
             <div class="container clearfix">
                 <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-                <ul>
-                    
+                <ul>     
                     {% for nav in site.navs %}
-                    <li><a href="{{ nav.href }}"
+                    <li ><a href="{{ nav.href }}"
                class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item hvr-underline-from-center"
                target="{{ nav.target | default: _self }}"
                title="{{ nav.label }}"><div>{{ nav.label }}</div></a></li>
