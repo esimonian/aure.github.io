@@ -26,7 +26,10 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <!-- My CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
-
+    
+     {% for css in page.css %}
+    <link rel="stylesheet" href="/assets/css/{{css}}">
+    {% endfor %}
 
     <!-- CSS set in layout -->
     {% for css in layout.css %}
