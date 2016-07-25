@@ -1,8 +1,6 @@
 ---
-layout: page
+layout: default
 title: Christmas
-css: ['music.css']
-javascript: ['underscore-min.js']
 ---
 {% assign songs = "Xmas" | all_songs%}
 

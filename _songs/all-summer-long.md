@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: All Summer Long
-css: ['music.css']
-javascript: ['underscore-min.js']
+artist: BeachBoys
 ---
 
 {% assign files = "BeachBoys" | files_from_song: "All Summer Long" %}

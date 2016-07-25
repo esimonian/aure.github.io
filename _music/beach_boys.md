@@ -1,8 +1,6 @@
 ---
-layout: page
+layout: default
 title: Beach Boys
-css: ['music.css']
-javascript: ['underscore-min.js']
 ---
 {% assign songs = "BeachBoys" | all_songs%}
 
