@@ -51,7 +51,7 @@ collections:
     output: true
   songs:
     output: true
-    permalink: /artist/:path/ 
+    permalink: /awesome/:path/
 
 
 # Disque
