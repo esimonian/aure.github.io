@@ -49,9 +49,19 @@ kramdown:
 collections:
   music:
     output: true
-  songs:
+  beachboys:
     output: true
-    permalink: /awesome/:path/
+  drifters:
+    output: true
+  eagles:
+    output: true
+  fourseasons:
+    output: true
+  neildiamond:
+    output: true
+  xmas:
+    output: true
+
 
 
 # Disque
