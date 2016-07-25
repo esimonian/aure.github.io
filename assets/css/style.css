@@ -1980,7 +1980,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 }
 
 #header.sticky-header:not(.static-sticky).sticky-style-2,
-#header.sticky-header:not(.static-sticky).sticky-style-3 { height: 161px; }
+#header.sticky-header:not(.static-sticky).sticky-style-3 { height: 60px; }
 
 #header.sticky-header:not(.static-sticky).sticky-style-2 #primary-menu,
 #header.sticky-header:not(.static-sticky).sticky-style-3 #primary-menu { border-top: 0; }
