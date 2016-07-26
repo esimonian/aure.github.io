@@ -14,3 +14,12 @@ end
 
 Liquid::Template.register_tag('render_lyrics', Jekyll::RenderLyrics)
 
+
+# to use:
+#{% for file in site.static_files %}
+#  {% if file.path contains {{page.title}} and file.extname contains "txt"%}
+#    {% assign file_path = {{file.path}} %}
+#  {% endif %}
+#{% endfor %}
+#
+#{% render_lyrics %}#

@@ -1,96 +1,89 @@
 <div class="container" id="songs">
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains {{page.title}} and file.extname contains "png"%}
-      {% assign title = {{file.path}} | split: "/" %}
-      <li class="text-center"><img src="{{file.path}}" alt="lyrics" style="max-width: 80%;"></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains {{page.title}} and file.extname contains "png"%}
+        {% assign title = {{file.path}} | split: "/" %}
+        <li class="text-center"><img src="{{file.path}}" alt="lyrics" style="max-width: 80%;"></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-<hr>
+  <hr>
 
-<h3>Pdfs:</h3>
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains {{page.title}} and file.extname contains "pdf"%}
-      {% assign title = {{file.path}} | split: "/" %}
-      <li><a href="{{file.path}}">{{title | last | remove: ".pdf"}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h3>Pdfs:</h3>
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains {{page.title}} and file.extname contains "pdf"%}
+        {% assign title = {{file.path}} | split: "/" %}
+        <li><a href="{{file.path}}">{{title | last | remove: ".pdf"}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-<hr>
+  <hr>
 
-<h3>MIDIs:</h3>
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains {{page.title}} and file.extname contains "mid"%}
-      {% assign title = {{file.path}} | split: "/" %}
-      <li><a href="{{file.path}}">{{title | last | remove: ".mid"}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h3>MIDIs:</h3>
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains {{page.title}} and file.extname contains "mid"%}
+        {% assign title = {{file.path}} | split: "/" %}
+        <li><a href="{{file.path}}">{{title | last | remove: ".mid"}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-<hr>
+  <hr>
 
-<h3>Docs:</h3>
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains {{page.title}} and file.extname contains "doc"%}
-      {% assign title = {{file.path}} | split: "/" %}
-      <li><a href="{{file.path}}">{{title | last | remove: ".doc"}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h3>Docs:</h3>
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains {{page.title}} and file.extname contains "doc"%}
+        {% assign title = {{file.path}} | split: "/" %}
+        <li><a href="{{file.path}}">{{title | last | remove: ".doc"}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-<hr>
+  <hr>
 
-<h3>Sibelius:</h3>
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains {{page.title}} and file.extname contains "sib"%}
-      {% assign title = {{file.path}} | split: "/" %}
-      <li><a href="{{file.path}}">{{title | last | remove: ".sib"}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h3>Sibelius:</h3>
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains {{page.title}} and file.extname contains "sib"%}
+        {% assign title = {{file.path}} | split: "/" %}
+        <li><a href="{{file.path}}">{{title | last | remove: ".sib"}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-<hr>
+  <hr>
 
-<h3>Encore:</h3>
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains {{page.title}} and file.extname contains "enc"%}
-      {% assign title = {{file.path}} | split: "/" %}
-      <li><a href="{{file.path}}">{{title | last | remove: ".enc"}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h3>Encore:</h3>
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains {{page.title}} and file.extname contains "enc"%}
+        {% assign title = {{file.path}} | split: "/" %}
+        <li><a href="{{file.path}}">{{title | last | remove: ".enc"}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-<hr>
+  <hr>
 
-<h3>Finale:</h3>
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains {{page.title}} and file.extname contains "mus"%}
-      {% assign title = {{file.path}} | split: "/" %}
-      <li><a href="{{file.path}}">{{title | last | remove: ".mus"}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h3>Finale:</h3>
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains {{page.title}} and file.extname contains "mus"%}
+        {% assign title = {{file.path}} | split: "/" %}
+        <li><a href="{{file.path}}">{{title | last | remove: ".mus"}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-<hr>
+  <hr>
 
-<div>{% include help.html %}</div>
+  <div>{% include help.html %}</div>
 
-<hr>
+  <hr>
 
-{% for file in site.static_files %}
-  {% if file.path contains {{page.title}} and file.extname contains "txt"%}
-    {% assign file_path = {{file.path}} %}
-  {% endif %}
-{% endfor %}
-
-{% render_lyrics %}
 </div>
