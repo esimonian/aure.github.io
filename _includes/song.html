@@ -1,10 +1,12 @@
-{% for file in site.static_files %}
-  {% if file.path contains {{page.title}} and file.extname contains "txt"%}
-    {% assign file_path = {{file.path}} %}
-  {% endif %}
-{% endfor %}
-
-{% render_lyrics %}
+<div class="container" id="songs">
+<ul>
+  {% for file in site.static_files %}
+    {% if file.path contains {{page.title}} and file.extname contains "png"%}
+      {% assign title = {{file.path}} | split: "/" %}
+      <li class="text-center"><img src="{{file.path}}" alt="lyrics" style="max-width: 80%;"></li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 <hr>
 
@@ -82,3 +84,13 @@
 
 <div>{% include help.html %}</div>
 
+<hr>
+
+{% for file in site.static_files %}
+  {% if file.path contains {{page.title}} and file.extname contains "txt"%}
+    {% assign file_path = {{file.path}} %}
+  {% endif %}
+{% endfor %}
+
+{% render_lyrics %}
+</div>
