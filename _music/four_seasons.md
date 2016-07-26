@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: default
 title: Four Seasons
-css: ['music.css']
-javascript: ['underscore-min.js']
 ---
 {% assign songs = "FourSeasons" | all_songs%}
+{% assign artist = "fourseasons" %}
 
 {% include artist.html %}

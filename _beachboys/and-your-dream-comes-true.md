@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: And Your Dream Comes True
-css: ['music.css']
-javascript: ['underscore-min.js']
+artist: BeachBoys
 ---
 
 {% assign files = "BeachBoys" | files_from_song: "And Your Dream Comes True" %}

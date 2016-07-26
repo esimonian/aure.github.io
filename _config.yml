@@ -6,19 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Aurelius Prochazka # ex. I m Chuan
-name: Aurelius Prochazka # ex. DONGChuan
+title: Aurelius Prochazka 
+name: Aurelius Prochazka
 email: aure@aure.com
-location: Mill Valley, CA # ex. Nice, France
+location: Mill Valley, CA 
 company: AudioKit
 company_url: http://audiokit.io/
-github_url: https://github.com/audiokit # ex. https://github.com/DONGChuan
+github_url: https://github.com/audiokit 
 description: My home page
 favicon: favicon.png # Image must be in assets/images
 repository: audiokit/AudioKit
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
-# For production, use your github page url. ex. http://dongchuan.github.io
+# For production, use your github page url. 
 url: http://aurelius.com/
 
 ## Gem
@@ -43,24 +43,35 @@ defaults: []
 
 kramdown:
   input: GFM
-  syntax_highlighter: coderay
+  syntax_highlighter: syntax_highlighter_opts
 
 # Collections
 collections:
   music:
     output: true
-  songs:
-    output: true  
+  beachboys:
+    output: true
+  drifters:
+    output: true
+  eagles:
+    output: true
+  fourseasons:
+    output: true
+  neildiamond:
+    output: true
+  xmas:
+    output: true
+
 
 
 # Disque
-disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+disque: my_disque_settings 
 
 # Pagination
 paginate: 10
 paginate_path: 'page:num'
 
-# Navigation. If you do not like these modules, just remove them :D
+# Navigation 
 navs:
   -
     href: /
@@ -88,10 +99,6 @@ navs:
   -
     href: /about
     label: About
-
-
-# Sidebar to show popular repo
-side_bar_repo_limit: 5 # Number of repos to show
 
 # Google Analytics
 analytics :

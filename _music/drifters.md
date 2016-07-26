@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: default
 title: Drifters
-css: ['music.css']
-javascript: ['underscore-min.js']
 ---
 {% assign songs = "Drifters" | all_songs%}
+{% assign artist = "drifters" %}
 
 {% include artist.html %}
+

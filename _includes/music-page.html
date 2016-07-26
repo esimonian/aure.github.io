@@ -5,24 +5,17 @@
 <div id="container-open-source">
 
     <section class="container">
-        <div class="repo-list row">
             {% for music in site.music%}
               {% if music.title != "Music" %}
             <div class="col-md-4 card text-center">
-                <div class="thumbnail">
-                    <div class="card-image geopattern" data-pattern-id="{{music.title}}">
-                        <div class="card-image-cell">
-                            <h3 class="card-title">
-                                <a href="{{music.url}}" >{{music.title}}</a>
-                            </h3>
-                        </div>
-                    </div>
-                    
+                <div class="card-image-cell">
+                    <h3 class="card-title">
+                        <a href="{{music.url}}" >{{music.title}}</a>
+                    </h3>
                 </div>
             </div>
             {% endif %}
             {% endfor %}
-        </div>
     </section>
 
 </div>
