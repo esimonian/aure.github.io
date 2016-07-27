@@ -27,7 +27,6 @@ gems:
   - jekyll-geo-pattern
   - rouge
   - kramdown
-  - jekyll-github-metadata
 
 # Build settings
 markdown: kramdown
@@ -79,11 +78,7 @@ navs:
   -
     href: /open-source
     label: Open-Source
-
-  -
-    href: /blog
-    label: Blog
-
+    
   -
     href: /presentations
     label: Presentations

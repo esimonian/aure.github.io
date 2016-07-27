@@ -1,25 +1,15 @@
 
 <div id="container-open-source">
-
-    <section class="container">
-        <div class="repo-list row">
+    <section class="container-fluid text-center">
             {% for song in songs %}
                 {%if {{song | slice: 0 != "."}}%}
-            <div class="col-md-4 card text-center">
-                <div class="thumbnail">
-                    <div class="card-image geopattern" data-pattern-id="{{ song }}">
-                        <div class="card-image-cell">
-                            <h3 class="card-title">
-                                <a href="/{{artist}}/{{song | slugify}}">{{song}}</a>
-                            </h3>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-md-4 col-sm-6 card">
+                        <h4 class="card-title" style="margin: 10px;">
+                            <a href="/{{artist}}/{{song | slugify}}">{{song}}</a>
+                        </h4>
             </div>
                 {% endif %}
             {% endfor %}
-        </div>
     </section>
 
 </div>
