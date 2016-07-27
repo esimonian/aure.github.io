@@ -1,9 +1,9 @@
 ---
 layout: default
-title: California Girls
+title: Happy Birthday Four Freshmen
 ---
 
-{% assign files = "BeachBoys" | files_from_song: "California Girls" %}
+{% assign files = "BeachBoys" | files_from_song: "Happy Birthday Four Freshmen" %}
 {%assign artist = "BeachBoys"%}
 {% assign songs = "BeachBoys" | all_songs %}
 

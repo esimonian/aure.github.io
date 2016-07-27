@@ -1,9 +1,9 @@
 ---
 layout: default
-title: California Girls
+title: Little Saint Nick
 ---
 
-{% assign files = "BeachBoys" | files_from_song: "California Girls" %}
+{% assign files = "BeachBoys" | files_from_song: "Little Saint Nick" %}
 {%assign artist = "BeachBoys"%}
 {% assign songs = "BeachBoys" | all_songs %}
 

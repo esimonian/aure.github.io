@@ -1,9 +1,9 @@
 ---
 layout: default
-title: California Girls
+title: The Warmth of the Sun
 ---
 
-{% assign files = "BeachBoys" | files_from_song: "California Girls" %}
+{% assign files = "BeachBoys" | files_from_song: "The Warmth of the Sun" %}
 {%assign artist = "BeachBoys"%}
 {% assign songs = "BeachBoys" | all_songs %}
 

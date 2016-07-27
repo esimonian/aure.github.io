@@ -1,9 +1,9 @@
 ---
 layout: default
-title: California Girls
+title: Sloop John B
 ---
 
-{% assign files = "BeachBoys" | files_from_song: "California Girls" %}
+{% assign files = "BeachBoys" | files_from_song: "Sloop John B" %}
 {%assign artist = "BeachBoys"%}
 {% assign songs = "BeachBoys" | all_songs %}
 

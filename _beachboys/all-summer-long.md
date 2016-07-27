@@ -1,9 +1,9 @@
 ---
 layout: default
-title: And Your Dream Comes True
+title: All Summer Long
 ---
 
-{% assign files = "BeachBoys" | files_from_song: "And Your Dream Comes True" %}
+{% assign files = "BeachBoys" | files_from_song: "All Summer Long" %}
 {% assign artist = "BeachBoys"%}
 {% assign songs = "BeachBoys" | all_songs %}
 
