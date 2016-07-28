@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Cherry, Cherry
+title: Solitary Man
 ---
 
-{% assign files = "NeilDiamond" | files_from_song: "Cherry, Cherry" %}
+{% assign files = "NeilDiamond" | files_from_song: "Solitary Man" %}
 {%assign artist = "neildiamond"%}
 {% assign songs = "NeilDiamond" | all_songs %}
 

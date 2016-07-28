@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Cherry, Cherry
+title: You Got to Me
 ---
 
-{% assign files = "NeilDiamond" | files_from_song: "Cherry, Cherry" %}
+{% assign files = "NeilDiamond" | files_from_song: "You Got to Me" %}
 {%assign artist = "neildiamond"%}
 {% assign songs = "NeilDiamond" | all_songs %}
 

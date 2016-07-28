@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Take It Easy
+title: Peaceful Easy Feeling
 ---
 
-{% assign files = "Eagles" | files_from_song: "Take It Easy" %}
+{% assign files = "Eagles" | files_from_song: "Peaceful Easy Feeling" %}
 {%assign artist = "eagles"%}
 {% assign songs = "Eagles" | all_songs %}
 
