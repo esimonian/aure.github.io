@@ -1,9 +1,9 @@
 ---
 layout: default
-title: While Shepherds Watched Their Sheep
+title: Silent Night
 ---
 
-{% assign files = "Xmas" | files_from_song: "While Shepherds Watched Their Sheep" %}
+{% assign files = "Xmas" | files_from_song: "Silent Night" %}
 {%assign artist = "xmas"%}
 {% assign songs = "Xmas" | all_songs %}
 

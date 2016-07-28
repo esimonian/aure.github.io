@@ -1,9 +1,9 @@
 ---
 layout: default
-title: While Shepherds Watched Their Sheep
+title: We Three Kings Of Orient Are
 ---
 
-{% assign files = "Xmas" | files_from_song: "While Shepherds Watched Their Sheep" %}
+{% assign files = "Xmas" | files_from_song: "We Three Kings Of Orient Are" %}
 {%assign artist = "xmas"%}
 {% assign songs = "Xmas" | all_songs %}
 
