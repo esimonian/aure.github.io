@@ -1,0 +1,94 @@
+# Title, decription, tagline and URL for your site
+# Can be used in your theme by calling 'site.title' and so on
+title: Aurelius Prochazka 
+name: Aurelius Prochazka
+email: aure@aure.com
+location: Mill Valley, CA 
+company: AudioKit
+description: 
+url: http://aure.github.io
+
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: .tmp/src
+destination: .tmp/dist
+exclude: ['assets']
+
+# Same as the title etc for your site but can instead be
+# called by using 'site.author.name' and so on
+# NOTE: Don't use @ in front of your Twitter username
+author:
+  name: 
+  email: 
+  uri: http://aure.com/
+  bio: 
+  twitter:
+  github:
+
+# _config.build.yml overwrites these options when you run `gulp build`
+# Enables future posts (posts with dates in the future) and drafts
+future: true
+show_drafts: true
+# Disables the more accurate related posts for faster generating of the site
+lsi: false
+# Only make the last 10 posts so generating isn't slow
+limit_posts: 10
+
+# Permalink structure and pagination options
+permalink: pretty
+paginate: 10
+paginate_path: 'page:num'
+excerpt_separator: ''
+
+# Collections
+collections:
+  music:
+    output: true
+  beachboys:
+    output: true
+  drifters:
+    output: true
+  eagles:
+    output: true
+  fourseasons:
+    output: true
+  neildiamond:
+    output: true
+  xmas:
+    output: true
+
+# Navigation 
+navs:
+  -
+    href: /
+    label: Home
+  -
+    href: /open-source
+    label: Open-Source
+    
+  -
+    href: /presentations
+    label: Presentations
+
+  -
+    href: /music
+    label: Music
+
+  -
+    href: /publications
+    label: Publications 
+
+# Markdown library and options
+markdown: redcarpet
+redcarpet:
+  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
+              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
+highlighter: rouge
+
+# Extending Jekyll
+gems:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
