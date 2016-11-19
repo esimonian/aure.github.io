@@ -1,0 +1,17 @@
+<!-- Sidebar
+============================================= -->
+<div class="sidebar nobottommargin clearfix">
+  <div class="sidebar-widgets-wrap">
+    <div class="clearfix">
+
+      <h4 class="text-center">Songs</h4>
+      <ul id="sidebarlinks">
+        {% for song in songs %}
+        {%if {{song | slice: 0 != "."}}%}
+          <li><a href="/{{artist}}/{{song | slugify}}"><div>{{song}}</div></a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div><!-- .sidebar end -->

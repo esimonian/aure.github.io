@@ -1,0 +1,25 @@
+<section id="page-title" style="margin-bottom: 20px;">
+  <div class="container clearfix">
+    <h1>{{page.title}}</h1>
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="/music">Music Transcriptions</a></li>
+      <li class="active">{{page.title}}</li>
+    </ol>
+  </div>
+</section><!-- #page-title end -->
+
+<section class="container text-center">
+  {% for song in songs %}
+    {%if {{song | slice: 0 != "."}}%}
+      <div class="col-md-4 col-sm-6 card">
+        <h4 class="card-title" style="margin: 10px;">
+          <a href="/{{artist}}/{{song | slugify}}">{{song}}</a>
+        </h4>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+
+

@@ -5,13 +5,10 @@ menu: home
 <section id="slider" class="boxed-slider" style="max-height: 950px;">
     <div class="container clearfix">
         <div id="oc-slider" class="owl-carousel carousel-widget" data-items="1" data-loop="true" data-nav="true" data-autoplay="5000" data-animate-in="fadeIn" data-animate-out="fadeOut" data-speed="800">   
-            <a href="http://min.360idev.com/schedule/" target="_blank"><img src="assets/images/min360iDev.png" alt="Slider"></a>
             <a href="https://realm.io/news/slug-aure-prochazka-fun-fast-audio-swift/" target="_blank"><img src="assets/images/Realm.png" alt="Slider"></a>
         </div>
     </div>
 </section>
-<!-- Content
-============================================= -->
 <section id="content">
     <div class="content-wrap">
         <div class="container clearfix">
@@ -51,81 +48,22 @@ menu: home
             <div class="line notopmargin"></div>
             <h3 class="center">Open-Source Work</h3>
             <div id="oc-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-margin="1" data-loop="true" data-nav="true" data-pagi="false"data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="4">
-
-                <div class="oc-item">
-                    <div class="iportfolio">
-                        <div class="portfolio-image text-center">
-                            <i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin: 0px;"></i>
-                        </div>
-                        <div class="portfolio-desc text-center">
-                            <h3><a href="https://github.com/audiokit/AudioKit" target="_blank">AudioKit</a></h3>
-                        <div>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=audiokit&repo=Audiokit&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=audiokit&repo=Audiokit&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="oc-item">
-                    <div class="iportfolio">
-                        <div class="portfolio-image text-center">
-                            <i class="i-plain color i-large icon-line2-globe  inline-block" style="margin: 0px;"></i>
-                        </div>
-                        <div class="portfolio-desc text-center">
-                            <h3><a href="https://github.com/audiokit/audiokit.github.io" target="_blank">AudioKit Website</a></h3>
-                        <div>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=audiokit&repo=audiokit.github.io&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=audiokit&repo=audiokit.github.io&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="oc-item">
-                    <div class="iportfolio">
-                        <div class="portfolio-image text-center">
-                            <i class="i-plain color i-large icon-sound inline-block" style="margin: 0px;"></i>
-                        </div>
-                        <div class="portfolio-desc text-center">
-                            <h3><a href="https://github.com/PaulBatchelor/Soundpipe">Soundpipe</a></h3>
-                        <div>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=PaulBatchelor&repo=Soundpipe&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=PaulBatchelor&repo=Soundpipe&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="oc-item">
-                    <div class="iportfolio">
-                        <div class="portfolio-image text-center">
-                            <i class="i-plain color i-large icon-microphone2 inline-block" style="margin: 0px;"></i>
-                        </div>
-                        <div class="portfolio-desc text-center">
-                            <h3><a href="https://github.com/PaulBatchelor/Sporth">Sporth</a></h3>
-                            <div>
-                                <iframe src="https://ghbtns.com/github-btn.html?user=PaulBatchelor&repo=Sporth&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                                <iframe src="https://ghbtns.com/github-btn.html?user=PaulBatchelor&repo=Sporth&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                {% for repo in site.data.opensource %}
+                    <div class="oc-item">
+                        <div class="iportfolio">
+                            <div class="portfolio-image text-center">
+                                <i class="i-plain color i-large {{repo.icon}} inline-block" style="margin: 0px;"></i>
+                            </div>
+                            <div class="portfolio-desc text-center">
+                                <h3><a href="https://github.com/{{repo.username}}/{{repo.reponame}}" target="_blank">{{repo.name}}</a></h3>
+                            <div class="opensource-stars">
+                                <iframe src="https://ghbtns.com/github-btn.html?user={{repo.username}}&repo={{repo.reponame}}&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                                <iframe src="https://ghbtns.com/github-btn.html?user={{repo.username}}&repo={{repo.reponame}}&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                            </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="oc-item">
-                    <div class="iportfolio">
-                        <div class="portfolio-image text-center">
-                            <i class="i-plain color i-large icon-headphones inline-block" style="margin: 0px;"></i>
-                        </div>
-                        <div class="portfolio-desc text-center">
-                            <h3><a href="https://github.com/csound/csound">csound</a></h3>
-                        <div>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=csound&repo=csound&type=star&count=true" frameborder="0" scrolling="0" width="100x" height="20px"></iframe>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=csound&repo=csound&type=fork&count=true" frameborder="0" scrolling="0" width="100x" height="20px"></iframe>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
+                {% endfor %}
             </div>
 
         </div>

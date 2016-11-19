@@ -8,3 +8,9 @@ gulp.task('fonts', () =>
     .pipe(gulp.dest('.tmp/assets/fonts'))
     .pipe(size({title: 'fonts'}))
 );
+
+gulp.task('music', () =>
+  gulp.src('src/music-files/**/**')
+    .pipe(gulp.dest('.tmp/assets/music-files'))
+    .pipe(size({title: 'music'}))
+);

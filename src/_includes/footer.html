@@ -1,38 +1,45 @@
-<footer class="site-footer">
+<footer id="footer" class="dark">
 
-  <div class="wrapper">
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+                <div class="container clearfix">
+                    <div class="col_half">
+                    <!--
+                        <img src="images/footer-logo.png" alt="Footer Logo" class="footer-logo">
+-->
+                        Copyrights &copy; 2016 All Rights Reserved by Aurelius Prochazka
+                    </div>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+                    <div class="col_half col_last tright">
+                        <div class="copyrights-menu copyright-links fright clearfix" style="padding-right: 35px;">
+                            <a href="/">Home</a>/<a href="/open-source">Open Source</a>/<a href="/presentations">Presentations</a>/<a href="/music">Music</a>/<a href="/publications">Publications</a>
+                        </div>
+                        
+                            <a href="https://twitter.com/AudioKitMan" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-        </ul>
-      </div>
+                            <a href="https://vimeo.com/audiokit" class="social-icon si-small si-borderless nobottommargin si-vimeo">
+                                <i class="icon-vimeo"></i>
+                                <i class="icon-vimeo"></i>
+                            </a>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.author.github %}
-          <li>
-            {% include icon-github.html username=site.author.github %}
-          </li>
-          {% endif %}
+                            <a href="https://github.com/audiokit" class="social-icon si-small si-borderless nobottommargin si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
+                            </a>
 
-          {% if site.author.twitter %}
-          <li>
-            {% include icon-twitter.html username=site.author.twitter %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+                            <a href="https://www.linkedin.com/in/aurelius" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
+                </div>
 
-  </div>
+            </div><!-- #copyrights end -->
 
-</footer>
+        </footer><!-- #footer end -->

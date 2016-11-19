@@ -1,0 +1,41 @@
+<section id="page-title" style="margin-bottom: 20px;">
+  <div class="container clearfix">
+    <h1>{{page.title}}</h1>
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="active">{{page.title}}</li>
+    </ol>
+  </div>
+</section><!-- #page-title end -->
+
+<div id="container-open-source">
+    <section class="container">
+        
+        {% for music in site.music%}
+         {% if music.title != "Music Transcriptions" %}
+
+            <div class="col-xs-12 col-sm-4 card text-center">
+                <div class="card-image-cell">
+                    <a href="{{music.url}}" >
+                        <img src="../assets/images/{{music.img}}" alt="{{music.title}}" height="200px">
+                    </a>
+                    <h3 class="card-title">
+                    
+                    </h3>
+                </div>
+            </div>
+        {% endif %}
+        {% endfor %}
+
+    </section>
+</div>
+
+<div class="container">
+  <div id="oc-images" class="owl-carousel image-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="2" data-items-xs="3" data-items-sm="4" data-items-md="4" data-autoplay="3000" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut">
+  {% for picture in pictures %}
+    <div class="oc-item">
+      <a href="#"><img src="/{{picture}}" alt=""></a>
+    </div>
+  {% endfor %}
+  </div>
+</div>

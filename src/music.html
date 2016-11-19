@@ -1,0 +1,10 @@
+---
+layout: default
+title: Music Transcriptions
+menu: music
+---
+
+{% assign picturesurl = "music" | all_images %}
+{% assign pictures = picturesurl | image_paths %}
+{% include music-page.html %}
+

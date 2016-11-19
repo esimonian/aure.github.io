@@ -6,7 +6,7 @@ email: aure@aure.com
 location: Mill Valley, CA 
 company: AudioKit
 description: 
-url: http://aure.github.io
+url: http://aure.com
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
@@ -76,7 +76,7 @@ navs:
   -
     href: /publications
     label: Publications 
-
+    
 # Markdown library and options
 markdown: redcarpet
 redcarpet:

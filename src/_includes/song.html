@@ -1,0 +1,98 @@
+<section id="page-title" style="margin-bottom: 20px;">
+  <div class="container clearfix">
+    <h1>{{page.title}}</h1>
+    
+  </div>
+  <div class="container clearfix music-titles">
+  <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="/music">Music Transcriptions</a></li>
+      <li><a href="/music/{{artist | downcase | replace: 'beach boys', 'beach_boys' | replace: 'fourseasons', 'four_seasons' | replace: 'neildiamond', 'neil_diamond'}}">{{artist | capitalize | replace: 'Beach boys', 'Beach Boys' | replace: 'Fourseasons', 'Four Seasons' | replace: 'Neildiamond', 'Neil Diamond'}}</a></li>
+      <li class="active">{{page.title}}</li>
+    </ol>
+  </div>
+</section><!-- #page-title end -->
+
+<div class="container text-center" id="songs">
+  <div class="col-sm-5">
+    <h3 style="margin-bottom: 10px;" class="text-center">PDFs</h3>
+    <ul style="margin-bottom: 10px;">
+      {% for file in site.static_files %}
+        {% if file.path contains {{page.title}} and file.extname contains "pdf"%}
+          {% assign title = {{file.path}} | split: "/" %}
+          <li><a href="{{file.path}}">{{title | last | remove: ".pdf"}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h3 style="margin-bottom: 10px;" class="text-center">MIDIs</h3>
+    <ul style="margin-bottom: 10px;">
+      {% for file in site.static_files %}
+        {% if file.path contains {{page.title}} and file.extname contains "mid"%}
+          {% assign title = {{file.path}} | split: "/" %}
+          <li><a href="{{file.path}}">{{title | last | remove: ".mid"}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h3 style="margin-bottom: 10px;" class="text-center">Sibelius</h3>
+    <ul style="margin-bottom: 10px;">
+      {% for file in site.static_files %}
+        {% if file.path contains {{page.title}} and file.extname contains "sib"%}
+          {% assign title = {{file.path}} | split: "/" %}
+          <li><a href="{{file.path}}">{{title | last | remove: ".sib"}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h3 style="margin-bottom: 10px;" class="text-center">Encore</h3>
+    <ul style="margin-bottom: 10px;">
+      {% for file in site.static_files %}
+        {% if file.path contains {{page.title}} and file.extname contains "enc"%}
+          {% assign title = {{file.path}} | split: "/" %}
+          <li><a href="{{file.path}}">{{title | last | remove: ".enc"}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h3 style="margin-bottom: 10px;" class="text-center">Finale</h3>
+    <ul style="margin-bottom: 10px;">
+      {% for file in site.static_files %}
+        {% if file.path contains {{page.title}} and file.extname contains "mus"%}
+          {% assign title = {{file.path}} | split: "/" %}
+          <li><a href="{{file.path}}">{{title | last | remove: ".mus"}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-sm-7">
+    <ul>
+      {% for file in site.static_files %}
+        {% if file.path contains {{page.title}} and file.extname contains "png"%}
+          {% assign title = {{file.path}} | split: "/" %}
+          <li class="text-center"><img src="{{file.path}}" alt="lyrics"></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<section class="container text-center">
+  <h4>More {{artist | capitalize | replace: 'Beach boys', 'Beach Boys' | replace: 'Fourseasons', 'Four Seasons' | replace: 'Neildiamond', 'Neil Diamond'}} Songs</h4>
+  {% for song in songs %}
+    {%if {{song | slice: 0 != "."}}%}
+    <div class="col-md-3 col-sm-4 col-xs-6 card">
+      <p class="card-title" style="margin-bottom:10px;">
+        <a href="/{{artist | downcase| replace: 'beach boys', 'beachboys'}}/{{song | slugify}}">{{song}}</a>
+      </p>
+    </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+
+<script type="text/javascript" src="/assets/js/jquery.js"></script>
+<script>
+  $( document ).ready(function() {
+    $( "ul" ).not(':has(li)').prev('h3').remove()
+  });
+</script>

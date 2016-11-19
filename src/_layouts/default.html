@@ -3,14 +3,12 @@
 
   {% include head.html %}
 
-  <body>
-
+  <body class="stretched no-transition">
+    <div id="wrapper" class="clearfix">
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="content">
+            {{ content }}
     </div>
 
     {% include footer.html %}
@@ -18,7 +16,7 @@
   <!-- JS -->
   <!-- inject:js -->
   <!-- endinject -->
-
+    </div>
   </body>
 
 </html>

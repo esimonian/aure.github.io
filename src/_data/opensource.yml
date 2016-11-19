@@ -1,0 +1,34 @@
+- name: AudioKit
+  username: audiokit
+  reponame: AudioKit
+  icon: icon-line2-equalizer
+
+- name: AudioKit Website
+  username: audiokit
+  reponame: audiokit.github.io
+  icon: icon-line2-globe 
+
+- name: Frameworks
+  username: aure
+  reponame: frameworks
+  icon: icon-code
+
+- name: iPad Playgrounds
+  username: audiokit
+  reponame: AudioKitPlaygroundBook
+  icon: icon-tablet
+
+- name: Soundpipe
+  username: PaulBatchelor
+  reponame: Soundpipe
+  icon: icon-sound
+
+- name: Sporth
+  username: PaulBatchelor
+  reponame: Sporth
+  icon: icon-microphone2
+
+- name: csound
+  username: csound
+  reponame: csound
+  icon: icon-headphones

@@ -1,0 +1,49 @@
+@media (max-width:991px) {
+    #primary-menu {
+        display: block;
+        float: none
+    }
+    #primary-menu-trigger {
+        opacity: 1;
+        pointer-events: auto;
+        top: 25px;
+        margin-top: 0;
+        left: 0;
+        z-index: 1
+    }
+    #primary-menu>div>ul,
+    #primary-menu>ul {
+        display: none;
+        float: none!important;
+        border: 0!important;
+        padding: 0!important;
+        margin: 0!important;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+    #primary-menu>div>ul {
+        margin-top: 60px!important
+    }
+}
+
+.opensource-stars {
+    margin: 15px 0;
+}
+
+.music-titles {
+    padding-top: 40px;
+}
+
+.presentation-video {
+    text-align: center;
+    iframe {
+        width: 100%;
+        min-height: 200px;
+        @media (min-width:768px) {
+            width: 70%;
+            min-height: 300px;
+        }
+    }
+    
+}

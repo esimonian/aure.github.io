@@ -16,3 +16,15 @@ gulp.task('images', () =>
     .pipe(gulp.dest('.tmp/assets/images'))
     .pipe(size({title: 'images'}))
 );
+
+gulp.task('music-images', () =>
+  gulp.src('src/music/**/**/*.png')
+    .pipe(cache(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng(),
+      imagemin.svgo({plugins: [{cleanupIDs: false}]})
+    ])))
+    .pipe(gulp.dest('.tmp/assets/music'))
+    .pipe(size({title: 'music'}))
+);
